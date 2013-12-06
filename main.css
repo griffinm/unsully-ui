@@ -3,11 +3,12 @@ GLOBAL/OVERRIDE
 ===========*/
 * {
 	-webkit-font-smoothing: antialiased;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	
 }
 
 body {
 	font-family: "Lato", helvetica, arial, sans-serif;
+	line-height: normal;
 }
 
 @media (max-width: 767px) {
@@ -42,6 +43,133 @@ article {
 		padding: 0;
 	}
 }
+
+/*=====================
+NAVBAR
+======================*/
+.navbar-unsully,
+.navbar-progress {
+	margin-bottom: 0 !important;
+}
+
+.navbar-unsully > .navbar-inner,
+.navbar-progress > .navbar-inner{
+	background-image: none;
+	filter: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-unsully  > .navbar-inner { 
+	background: white; /*background: #444E4C;*/
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border-bottom: 1px solid #efefef;
+}
+
+.navbar-unsully .nav > li > a,
+.navbar-unsully .navbar-text {
+	text-shadow: none;
+	padding: 20px;
+	line-height: normal;
+	font-size: 16px;
+	color: #444;
+}
+.navbar-unsully .nav > li > a:focus, 
+.navbar-unsully .nav > li > a:hover {
+	color: #222;
+}
+.navbar-unsully .nav > .active > a, 
+.navbar-unsully .nav > .active > a:hover, 
+.navbar-unsully .nav > .active > a:focus {
+	background: #efefef;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.navbar-unsully .brand {
+	padding: 17px;
+	margin-left: 0;
+	text-shadow: none;
+	font-weight: bold;
+}
+
+/* ==
+cabinet
+ == */
+
+.cabinet {
+	border-right: 1px solid #efefef;
+}
+
+.cabinet ul {
+	margin: 0;
+}
+
+.cabinet ul > li {
+	display: block;
+	list-style: none;
+	border-bottom: 1px solid #efefef;
+}
+
+.cabinet ul > li > a {
+	color: #444;
+	display: block;
+	padding: 20px;
+	border-right: 3px solid white; /* to offset size tween on transition */
+	-webkit-transition: all 0.25s cubic-bezier(1.000,0.000,0.000,1.000);
+	-moz-transition: all 0.25s cubic-bezier(1.000,0.000,0.000,1.000);
+	-ms-transition: all 0.25s cubic-bezier(1.000,0.000,0.000,1.000);
+	-o-transition: all 0.25s cubic-bezier(1.000,0.000,0.000,1.000);
+	transition: all 0.25s cubic-bezier(1.000,0.000,0.000,1.000);
+}
+
+.cabinet ul > li > a:hover,
+.cabinet ul > li > a:focus {
+	border-right: 3px solid #F48B20;
+	text-decoration: none;
+}
+
+.cabinet .active > a,
+.cabinet .active > a:hover,
+.cabinet .active > a:focus {
+	border-right: 3px solid #74CEB7;
+}
+
+/* ==
+progress bar 
+ == */
+.navbar-progress > .navbar-inner { background: #222; }
+
+.navbar-progress .container {
+	width: 960px;
+}
+
+.navbar-progress .nav > li {
+	padding: 15px;
+	color: #444;
+	line-height: normal;
+	background: #333;
+}
+	.navbar-progress .nav > li.active {
+		background: none;
+		color: white;
+	}
+
+@media (max-width: 767px) {
+	.navbar-progress .container {
+		width: auto;
+	}	
+}
+
+
 /*==========
 LAYOUTS
 ===========*/
