@@ -13,31 +13,40 @@
 </head>
 <body>
 
-
+<!--NAVBAR-->
 <div class="navbar navbar-unsully">
 	<div class="navbar-inner">
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</a>
 		<a class="brand" href="#">Unsully</a>
-	<!--
-		<ul class="nav">
-			<li class="active"><a href="#">Schedule a wash</a></li>
-			<li><a href="#">My Washes</a></li>
-			<li><a href="#">My Vehicles</a></li>
-			<li><a href="#">My Addresses</a></li>
-		</ul>
-	-->
+		<div class="nav-collapse collapse">
+			<ul class="nav pull-right">
+				<li><a href="#">Welcome, guy@somesite.com</a></li>
+			</ul>
+			<div class="call-to-action"><a href="#" class="btn btn-unsully btn-block">Schedule a Wash</a></div>
+		</div>
 	</div>
 </div>
 
 
 	<div id="main">
-		<div class="row-fluid">
+		<header class="header">
+			<div class="container-fluid">
+				<h1>Page Title</h1>
+			</div>
+		</header>
+		<div class="container-fluid" id="page-content">
+			<div class="row-fluid">
 			<div class="span3">
 				<aside class="cabinet">
 					<ul>
-						<li class="active">
-							<a href="#">Schedule a wash (active)</a>
+						<li class="header">
+							<h5><i class="icon-th-list icon"></i> Navigation</h5>
 						</li>
-						<li>
+						<li class="active">
 							<a href="#">My Washes</a>
 						</li>
 						<li>
@@ -49,7 +58,12 @@
 					</ul>
 				</aside>
 			</div>
-			<div class="span9"></div>
+			<div class="span9">
+				<div class="page-content">
+					
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 	<script src="http://code.jquery.com/jquery.js"></script>

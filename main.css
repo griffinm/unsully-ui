@@ -9,6 +9,7 @@ GLOBAL/OVERRIDE
 body {
 	font-family: "Lato", helvetica, arial, sans-serif;
 	line-height: normal;
+	background: #F8F8F8;
 }
 
 @media (max-width: 767px) {
@@ -26,7 +27,8 @@ article {
 	border-bottom: 1px solid #efefef;
 }
 
-.container {
+.container,
+.container-fluid {
 	width: 960px;
 	margin: 0 auto;
 }
@@ -36,7 +38,8 @@ article {
 }
 
 @media (max-width: 767px) {
-	.container {
+	.container,
+	.container-fluid {
 		width: auto;
 	}
 	.row {
@@ -101,6 +104,17 @@ NAVBAR
 	font-weight: bold;
 }
 
+.navbar-unsully .call-to-action {
+	width: 200px;
+	margin: 0 auto 0;
+	position: absolute;
+	left: 600px;
+}
+
+.navbar-unsully .btn {
+	margin-top: 5px;
+}
+
 /* ==
 cabinet
  == */
@@ -118,8 +132,18 @@ cabinet
 	list-style: none;
 	border-bottom: 1px solid #efefef;
 }
+.cabinet ul > li:last-child {
+	border-bottom: 0;
+}
+
+.cabinet ul > li.header {
+	background: white;
+	display: block;
+	padding: 5px 20px;
+}
 
 .cabinet ul > li > a {
+	background: white;
 	color: #444;
 	display: block;
 	padding: 20px;
@@ -173,6 +197,23 @@ progress bar
 /*==========
 LAYOUTS
 ===========*/
+
+#main > .header {
+	padding: 25px 0;
+	background: #114F68 url("img/head-bg.png") no-repeat;
+	color: white;
+}
+
+#page-content {
+	background: white;
+}
+
+.page-content {
+	background: white;
+	min-height: 300px;
+}
+
+
 #forms {
 	background: #2C3E50;
 
@@ -224,6 +265,7 @@ FORMS
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
 	filter: none;
+	margin-top: 0;
 }
 
 @media (max-width: 767px) {
