@@ -534,4 +534,14 @@ SIGNUP
 	margin-top: 50px;
 }
 
+/*==========
+CONFIRMATION
+===========*/
+
+.confirmation {
+	padding: 10px;
+	min-height: 300px;
+	background: #fff;
+	margin-top: -50px;
+}
 
