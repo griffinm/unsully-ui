@@ -212,7 +212,7 @@ LAYOUTS
 
 #main > .header {
 	padding: 25px 0;
-	background: #114F68 url("img/head-bg.png") no-repeat;
+	background: #114F68;
 	color: white;
 }
 
@@ -504,4 +504,34 @@ ACCORDION
 	background: #6EC4AE;
 	text-decoration: none;
 }
+
+/*==========
+PROGRESS
+===========*/
+
+.progress-unsully {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.progress-unsully > .bar {
+	background: #2187A7;
+	background-image: none;
+	border-bottom: 0;
+}
+
+/*==========
+SIGNUP
+===========*/
+
+.signup {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
 
